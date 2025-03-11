@@ -1,2 +1,10 @@
-.level1{color:#253d2c;}
+.level1{color:#304f39;}
+.resLink{ 
 
+    width: 300px;
+    padding: 10px;; 
+    border: medium solid #304f39; 
+    margin: 30px;
+    background-color: lightslategray;
+    
+}
