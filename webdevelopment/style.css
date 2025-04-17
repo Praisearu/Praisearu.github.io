@@ -2,9 +2,25 @@
 .resLink{ 
 
     width: 300px;
-    padding: 10px;; 
+    padding: 10px;
     border: medium solid #304f39; 
     margin: 30px;
     background-color: lightslategray;
-    
 }
+.a {
+    padding: 50px;
+    width: 1000px;
+    padding-top: 5px;
+    text-indent: 50px;
+}
+.a p::first-letter{
+    color: rgb(95, 143, 95);
+}
+
+h1 {
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+
