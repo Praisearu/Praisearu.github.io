@@ -1,12 +1,5 @@
 .level1{color:#304f39;}
-.resLink{ 
 
-    width: 300px;
-    padding: 10px;
-    border: medium solid #304f39; 
-    margin: 30px;
-    background-color: lightslategray;
-}
 .a {
     padding: 50px;
     width: 1000px;
@@ -24,3 +17,26 @@ footer{
     text-align: center;
 }
 
+.container{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 30px;
+
+}
+.resLink{ 
+
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: medium solid #304f39; 
+    margin: 30px;
+    background-color: lightslategray;
+}
+
+.leftSide{
+    background-color: #f0f0f0;
+}
+ .rightSide{
+    background-color: #e0e0e0;
+}
