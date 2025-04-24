@@ -20,10 +20,11 @@ footer{
 .container{
     padding: 50px;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 50% 50%;
     grid-gap: 30px;
 
 }
+
 .resLink{ 
 
     width: 300px;
@@ -36,7 +37,9 @@ footer{
 
 .leftSide{
     background-color: #f0f0f0;
+    grid-column: 1;
 }
  .rightSide{
     background-color: #e0e0e0;
+    grid-column: 2;
 }

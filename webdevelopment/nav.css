@@ -1,13 +1,20 @@
-.navigation ul {
+.navigation{
+    display: inline;
+}
+
+.list{
     list-style-type: none;
     background-color: #545353;
     padding: 0px;
     margin: 0px;
     display: flex;
     justify-content: center;
-   }
-   
-   .navigation a {
+}
+   .list li{
+    display: inline;
+}
+
+   .list li a {
     color: white;
     font-size: large;
     text-decoration: none;
@@ -19,62 +26,40 @@
     transition: background-color 0.3s ease;
    }
    
-   .navigation a:hover {
+   .list a:hover {
     background-color: #262626;
    }
    
-   .navigation li {
-    margin: 3px;
-    position: relative;
-   }
-   
-  
-   .navigation li .dropdown {
-    background-color: #545353; 
-    display: none; 
+   .ddown {
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    padding: 0;
-    margin: 0;
-    z-index: 1000;
-    list-style-type: none;
+    background-color: #545353;
    }
 
-   .navigation li:hover .dropdown {
+   .proj:hover .ddown{
     display: block;
-    animation: fadeIn 0.3s ease; 
+    
    }
-   .dropdown{
-    display: none; 
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #545353;
-    width: 200px;
-    padding: 0;
-    margin: 0;
-    z-index: 1000;
-    list-style-type: none;
-    flex-direction: column;
-    align-items:center;
+
+   #hamburger{
+    display: none;
    }
+
+   @media only screen and (max-width: 640px){
+    #hamburger {
+        display: inline;
+   }
+   .list{
+    display: none;
+    
+   }
+   nav:hover.list{
+    display: block;
+   }
+
+   .proj:hover{
+    display: none;
+   }
+   }
+
  
-   .dropdown li {
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid #666; 
-    flex: 1 0 auto;
-    display: flex;
-   }
-   
-   .dropdown a {
-    padding: 15px 25px;
-    width: 100%;
-    text-align: left; 
-    flex: 1;
-    display: flex;
-   }
-   
-  
