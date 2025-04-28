@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
@@ -23,13 +24,30 @@
     -->
 </head>
 <body>
-    <nav class="navigation">
-        <ul>
+    <nav class= "navigation">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" id="hamburger">&#9776;</label>
+        <ul class="list">
+
             <li class="n"><a href="/index.html">Home</a></li>
             <li class="n"><a href="/about.html">About</a></li>
-            <li class="n"><a href="#projects.html">Projects</a></li>
+            <li class="proj"><a href="#projects.html">Projects </a>
+
+                    <ul class="ddown">
+
+                    <li><a href="index.html">AB</a></li>
+                    
+                    <li><a href="index.html">BC</a></li>
+                    
+                    <li><a href="index.html">CD</a></li>
+                    
+                    </ul>
+                
+                    </li>
             <li class="n"><a href="/reflection.html">Reflection</a></li>
+            <li class="n"><a href="#reflection.html">Contacts</a></li>
         </ul>
+
     </nav>
 
     
@@ -40,9 +58,12 @@
 
             <div class="container">
                 <div class="leftSide">
-                    <div></div>
-                    <div class="resLink">
-                        <p><a href="/IyinoluwaResume.pdf">Link to Resume</a></p>
+                    <div>
+                        <img src="headshotHere.jpg" alt="Headshot" class="pic" width="280" height="250">
+                        <section class="resLink">
+                            <p><a href="/IyinoluwaResume.pdf">Link to Resume</a></p>
+                            <p> RESUME VIDEO GOES BELOW</p>
+                        </section>
                     </div>
                 </div>
                 <div class="rightSide">

@@ -1,45 +1,109 @@
-.level1{color:#304f39;}
-
-.a {
-    padding: 50px;
-    width: 1000px;
-    padding-top: 5px;
-    text-indent: 50px;
-}
-.a p::first-letter{
-    color: rgb(95, 143, 95);
+.level1 {
+    color: #304f39;
 }
 
-h1 {
-    text-align: center;
-}
-footer{
+h1, footer {
     text-align: center;
 }
 
-.container{
-    padding: 50px;
+.homeContainer {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 40% 20%;
+    height: 100vh; /* optional: make it fit the full screen height nicely */
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.resLink{ 
-
-    width: 300px;
-    height: 50px;
-    padding: 10px;
-    border: medium solid #304f39; 
-    margin: 30px;
-    background-color: lightslategray;
+.part1 {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
 }
 
-.leftSide{
-    background-color: #f0f0f0;
-    grid-column: 1;
+.part2 {
+    grid-row: 2;
+    text-align: center;
+    padding: auto;
 }
- .rightSide{
-    background-color: #e0e0e0;
-    grid-column: 2;
+
+.part3 {
+    grid-row: 3;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
+
+.one{
+    grid-row: 1;
+    display: block;
+    justify-content: baseline;
+}
+.a{
+    padding-top: 3%;
+    grid-row: 2;
+    display: block;
+    justify-content: center;
+}
+.three{
+    padding-top: 4%;
+    grid-row: 3;
+    display: block;
+}
+.leftSide, .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    background-color: #304f39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #406f59;
+}
+
+
+.pic{
+    justify-content: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .leftSide {
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .rightSide {
+        grid-row: 2;
+        width: 100%;
+    }
+}
+

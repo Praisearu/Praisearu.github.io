@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    
     <style>
-    h1 {text-align: center;}
-    p {text-align: center;}
-    nav {text-align: center;}
+        h1, p, nav {
+            text-align: center;
+        }
     </style>
 
-
-<!--
-
-Title: Home Page for Portfolio Website
-
-Use:  Explains the purpose of the website 
-
-Author: Praise Aruwajoye 
-
-School/Term: Spring 2025 _MIZZOU
-
-Developed: Feb 15th 2025
-
-Tested:  Feb 15th 2025
-
--->
-
-               <meta charset="utf-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1">
-               <title>Home Page</title>
+    <!--
+    Title: Home Page for Portfolio Website
+    Use: Explains the purpose of the website 
+    Author: Praise Aruwajoye 
+    School/Term: Spring 2025 _MIZZOU
+    Developed: Feb 15th 2025
+    Tested: Feb 15th 2025
+    -->
 </head>
 
 <body>
-    <nav class= "navigation">
-        <label id="hamburger">&#9776;</label>
-        <ul class="list">
 
+    <nav class="navigation">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" id="hamburger">&#9776;</label>
+        <ul class="list">
             <li class="n"><a href="/index.html">Home</a></li>
             <li class="n"><a href="/about.html">About</a></li>
-            <li class="proj"><a href="#projects.html">Projects </a>
-
-                    <ul class="ddown">
-                    
-                    <li><a href="index.html">AB</a></li>
-                    
-                    <li><a href="index.html">BC</a></li>
-                    
-                    <li><a href="index.html">CD</a></li>
-                    
-                    </ul>
-                
-                    </li>
+            <li class="proj">
+                <a href="/projects.html">Projects</a>
+                <ul class="ddown">
+                    <li><a href="/projects/ab.html">AB</a></li>
+                    <li><a href="/projects/bc.html">BC</a></li>
+                    <li><a href="/projects/cd.html">CD</a></li>
+                </ul>
+            </li>
             <li class="n"><a href="/reflection.html">Reflection</a></li>
-            <li class="n"><a href="#reflection.html">Contacts</a></li>
+            <li class="n"><a href="/contacts.html">Contacts</a></li>
         </ul>
-
     </nav>
-    <header>
-        <h1 class="level1"> Home Page</h1>
-     </header>
-    <main>
-        
 
+    <div class="homeContainer">
+        <header class="part1">
+            <h1 class="level1">Home Page</h1>
+        </header>
+    
+        <main class="part2">
+            <h3>Introduction</h3>
+            <p>Hello, my name is Iyinoluwa Aruwajoye. Welcome to my Portfolio Website!</p>
+            <p>This website will serve as a portfolio to showcase my technical skills, work ethic, and accomplishments. As you explore this site, I hope you’ll see my passion for programming and my dedication to building projects that create a positive impact. I have showcased a few personal projects that demonstrate my proficiency in various programming languages.</p>
+        </main>
+    
+        <section class="part3">
+            <button onclick="location.href='/projects.html'">View My Projects</button>
+        </section>
+    </div> 
+    
 
-      <h3>Introduction</h3>
-        <p>Hello, my name is Iyinoluwa Aruwajoye. Welcome to my Portfolio Website! </p>
-        <p>This website will serve as a Portfolio to showcase my
-        technical skills, work ethic, and accomplishments. As you explore this site, I hope you’ll see my
-        passion for programming and my dedication to building projects that create a positive impact.
-        I have showcased a few personal projects that demonstrate my proficiency in various programming languages.
-        </p>
-    </main>
-<footer>
-        <p>Author: Praise Aruwajoye </p>
-        <p><a href="mailto:ipahrp@umsystem.edu" >ipahrp@umsystem.edu</a></p>
+    <footer>
+        <p>Author: Praise Aruwajoye</p>
+        <p><a href="mailto:ipahrp@umsystem.edu">ipahrp@umsystem.edu</a></p>
+        <p>&copy; 2025 Praise Aruwajoye. All Rights Reserved.</p>
+    </footer>
 
-        <p> &copy; 2025 Praise Aruwajoye. All Rights Reserved.</p>
-</footer>
 </body>
-
 </html>

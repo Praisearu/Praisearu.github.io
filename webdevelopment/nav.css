@@ -1,20 +1,21 @@
-.navigation{
-    display: inline;
+.navigation {
+    display: block;
 }
 
-.list{
+.list {
     list-style-type: none;
     background-color: #545353;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
-   .list li{
-    display: inline;
+
+.list li {
+    display: inline-block;
 }
 
-   .list li a {
+.list li a {
     color: white;
     font-size: large;
     text-decoration: none;
@@ -24,42 +25,56 @@
     width: 200px;
     height: auto;
     transition: background-color 0.3s ease;
-   }
-   
-   .list a:hover {
+}
+
+.list a:hover {
     background-color: #262626;
-   }
-   
-   .ddown {
+}
+
+.ddown {
     display: none;
     position: absolute;
     background-color: #545353;
-   }
+}
 
-   .proj:hover .ddown{
-    display: block;
-    
-   }
+.proj:hover .ddown {
+    display: flex;
+    flex-direction: column;
 
-   #hamburger{
+}
+
+#toggle-menu {
     display: none;
-   }
+}
 
-   @media only screen and (max-width: 640px){
+#hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
     #hamburger {
-        display: inline;
-   }
-   .list{
-    display: none;
-    
-   }
-   nav:hover.list{
-    display: block;
-   }
+        display: inline-block;
+    }
 
-   .proj:hover{
-    display: none;
-   }
-   }
+    .list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #545353;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
 
- 
+    #toggle-menu:checked + #hamburger + .list {
+        display: flex;
+    }
+
+    .proj:hover .ddown {
+        display: none;
+    }
+}
+
