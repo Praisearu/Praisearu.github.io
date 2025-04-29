@@ -91,6 +91,19 @@ footer{
     background-size: cover;
 }
 
+.icon{
+   
+    transition: width 2s, height 2s;
+    
+
+}
+.icon:hover{
+    width: 90px;
+    height: 90px;
+    
+}
+
+
 @media only screen and (max-width: 640px) {
     .container {
         display: grid;
