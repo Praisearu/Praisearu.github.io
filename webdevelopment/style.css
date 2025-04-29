@@ -86,7 +86,7 @@ button:hover {
 }
 
 footer{
-    background-image: url(/images/greenBackground.png) ;
+    background-image: url(images/greenBackground.png) ;
     background-repeat: no-repeat;
     background-size: cover;
 }
