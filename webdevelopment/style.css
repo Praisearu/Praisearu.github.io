@@ -32,6 +32,7 @@ h1, footer {
     grid-row: 2;
     text-align: center;
     padding: auto;
+
 }
 
 .part3 {
@@ -104,6 +105,46 @@ button:hover {
     .rightSide {
         grid-row: 2;
         width: 100%;
+    }
+
+
+}
+
+@media print{
+    *{
+        background: transparent;
+        color: black;
+        box-shadow: none;
+        text-shadow: none;
+
+    }
+    .navigation, .list, .button {
+        display: none;
+    }
+    .contents h2{
+        text-align: center;
+        margin-bottom: 0;
+        border: none;
+
+    }
+    .container{
+        margin-bottom: 0;
+        border: none;
+        
+    }
+    .container p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    a[href^="http:"]::after{
+        content: "["attr(href)"]";
+        color: black;
+    }
+    @page{
+        margin: 1;
+    }
+    p, ul{
+        font-size: 10pt;
     }
 }
 
