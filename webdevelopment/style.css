@@ -145,6 +145,63 @@ footer{
     
 }
 
+.courseworkTableContainer {
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .courseworkTable {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 600px;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  
+  .courseworkTable caption {
+    padding: 10px;
+    text-align: center;
+    display: table-caption;
+    font-size: 1.8em;
+    color: #304f39;
+    font-weight: bold;
+  }
+  
+  .courseworkTable thead tr {
+    background: white;
+    color: black;
+  }
+  
+  .courseworkTable thead th {
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid black;
+  }
+  
+  .courseworkTable tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+
+  .courseworkTable thead tr, .courseworkTable tbody tr:last-child {
+  background-color:  #94cec89c; 
+  color: black;
+}
+  
+  /* Responsive tweak */
+  @media only screen and (max-width: 768px) {
+    .courseworkTable {
+      width: 90%;
+      min-width: 100%;
+    }
+  
+    .courseworkTable caption {
+      font-size: 1.5em;
+    }
+  }
 
 @media only screen and (max-width: 640px) {
     .container {
