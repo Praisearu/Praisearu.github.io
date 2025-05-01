@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Reset default margin */
+  }
+  
+  main {
+    flex: 1;
+    padding-bottom: 100px; /* Missing semicolon here */
+  }
+  
+  .level1 {
+    color: #304f39;
+  }
+  
+  h1, footer {
+    text-align: center;
+  }
+  
+  .homeContainer {
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+    height: 100vh; /* Fixed comment syntax */
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  
+  .projContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.part1 {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.part2 {
+    grid-row: 2;
+    text-align: center;
+    padding: auto;
+
+}
+
+.part3 {
+    grid-row: 3;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.one{
+    grid-row: 1;
+    display: block;
+    justify-content: baseline;
+}
+.a{
+    padding-top: 3%;
+    grid-row: 2;
+    display: block;
+    justify-content: center;
+}
+.three{
+    padding-top: 4%;
+    grid-row: 3;
+    display: block;
+}
+
+.p1,.desc1{
+    grid-row: 1;
+}
+.p2, .desc2 {
+    grid-row: 2;
+}
+.p3, .desc3{
+    grid-row: 3;
+}
+.myProjects{
+    justify-content: center;
+}
+
+button {
+    background-color: #304f39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #406f59;
+}
+
+
+.pic{
+    justify-content: center;
+}
+
+footer{
+    background-image: url(images/greenBackground.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+.icon{
+   
+    transition: width 2s, height 2s;
+    
+
+}
+.icon:hover{
+    width: 90px;
+    height: 90px;
+    
+}
+
+
+@media only screen and (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .leftSide {
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .rightSide {
+        grid-row: 2;
+        width: 100%;
+    }
+
+    button{
+        display:none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media print{
+    *{
+        background: transparent;
+        color: black;
+        box-shadow: none;
+        text-shadow: none;
+
+    }
+    .navigation, .list, .button {
+        display: none;
+    }
+    .contents h2{
+        text-align: center;
+        margin-bottom: 0;
+        border: none;
+
+    }
+    .container{
+        margin-bottom: 0;
+        border: none;
+        
+    }
+    .container p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    a[href^="http:"]::after{
+        content: "["attr(href)"]";
+        color: black;
+    }
+    @page{
+        margin: 1;
+    }
+    p, ul{
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .projContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5%;
+    }
+
+    .p1, .desc1,
+    .p2, .desc2,
+    .p3, .desc3 {
+        grid-row: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .projContainer img {
+        max-width: 100%;
+        height: auto;
+    }
+    .projContainer section, .projContainer div {
+    margin-bottom: 1rem;
+    }
+}
+
+
+
+    
+
+
