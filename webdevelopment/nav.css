@@ -1,40 +1,67 @@
 .navigation {
     display: block;
+    background-color: #262626;
+    width: 100%;
 }
 
 .list {
     list-style-type: none;
-    background-color: #545353;
+    background-color: #262626;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+
 }
 
 .list li {
-    display: inline-block;
+    flex: 1;
+    position: relative;
 }
 
 .list li a {
+    background-color: #262626;
     color: white;
     font-size: large;
     text-decoration: none;
     padding: 25px;
     display: block;
     text-align: center;
-    width: 200px;
+    width: 100%;
     height: auto;
     transition: background-color 0.3s ease;
 }
 
 .list a:hover {
-    background-color: #262626;
+    background-color: #545353;
 }
 
 .ddown {
     display: none;
     position: absolute;
-    background-color: #545353;
+    background-color: #262626;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.ddown li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ddown li a {
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    background-color: #262626;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
 }
 
 .proj:hover .ddown {
