@@ -1,4 +1,4 @@
-/* === Global Reset === */
+
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -25,8 +25,17 @@ main {
 h1, footer {
   text-align: center;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
-/* === Navigation === */
 .navigation {
   display: block;
   background-color: #262626;
@@ -138,8 +147,8 @@ h1, footer {
     width: 100%;
   }
 }
+ 
 
-/* === Contact Form === */
 .formContainer {
   display: flex;
   justify-content: center;
@@ -176,7 +185,7 @@ background-color: transparent !important;
 
 }
 
-/* Inputs fill the remaining space */
+
 form input,
 form textarea {
 flex: 1;
@@ -184,7 +193,7 @@ padding: 10px;
 font-size: 1em;
 border: 1px solid #ccc;
 border-radius: 5px;
-margin-left: 15px; /* gap between label and input */
+margin-left: 15px; 
 overflow: hidden;
 }
 
@@ -228,7 +237,7 @@ form button:hover {
   }
 }
 
-/* === Projects & Grid Content === */
+
 .container,
 .projContainer {
   display: grid;
@@ -285,7 +294,7 @@ button {
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  /* remove margin-left/right if manually set */
+  
 }
 .projBtn {
   display: flex;
@@ -353,7 +362,7 @@ button {
   }
 }
 
-/* === Footer === */
+
 footer {
   background-image: url(images/greenBackground.png);
   background-repeat: no-repeat;
@@ -379,7 +388,7 @@ footer p, footer a {
   height: 90px;
 }
 
-/* === Coursework Table === */
+
 .courseworkTableContainer {
   overflow-x: auto;
   width: 100%;

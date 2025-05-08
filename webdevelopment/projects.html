@@ -26,11 +26,21 @@ Tested: Feb 15th 2025
         color: #304f39;
         font-size: 400%;
     }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
  </style>
 </head>
 <body>
     <nav class="navigation">
-        <input type="checkbox" id="toggle-menu" />
+        <input type="checkbox" id="toggle-menu">
         <label for="toggle-menu" id="hamburger">&#9776;</label>
         <ul class="list">
             <li class="n"><a href="index.html">Home</a></li>
@@ -55,14 +65,15 @@ Tested: Feb 15th 2025
 
     <main>
     <div class="projContainer">
-        <section class="p1">
+        <div class="p1">
+            <h2 class="visually-hidden">Olokunbobade Management System Project</h2>
             <img src="images/greenBackground.png" alt="pic">
             <img src="images/proj1.png" alt="Olokunbobade Management System" class="proj1img">
-        </section>
+        </div>
         <div id="desc1" class="desc1">
             <h2>Olokunbobade Management System (Java + SQL)</h2>
             <p>The Olokunbobade Management System is an application designed to streamline
-                the organization and management of data for my family’s annual reunion. This
+                the organization and management of data for my family's annual reunion. This
                 project reflects my commitment to solving real-world challenges while honoring
                 the connections that matter most. The system offers a range of features tailored
                 to enhance efficiency and accessibility. Users can add new family members,
@@ -88,43 +99,44 @@ Tested: Feb 15th 2025
                 specific needs. The Management System reflects my dedication to using
                 technology to bring people together and strengthen connections.</p></div>
     
-                <section class="p2">
-                    <img src="images/greenBackground.png" alt="pic">
-                    <img src="images/proj2.png" alt="Brunswick Emergency Beacon" class="proj2img">
-                  </section>
+        <div class="p2">
+            <h2 class="visually-hidden">Brunswick Emergency Beacon Project</h2>
+            <img src="images/greenBackground.png" alt="pic">
+            <img src="images/proj2.png" alt="Brunswick Emergency Beacon" class="proj2img">
+        </div>
         <div id="desc2" class="desc2">
             <h2>Brunswick Emergency Beacon (UX/UI + Emergency Preparedness App)</h2>
             <p>The Brunswick Emergency Beacon (BEB) is a community-centered application developed to improve emergency preparedness and communication in Brunswick, Missouri—a town historically impacted by natural disasters like river flooding, fires, and tornadoes. This project was born out of a real-world need for accessible and timely emergency alerts in rural areas where communication infrastructure is often limited.
 
                 The app is designed to provide residents with critical safety updates and resources during crises. It features clear tab-based navigation for different disaster types, including floods, fires, and tornadoes. Each section offers preparation graphics, evacuation routes, designated shelter locations, and step-by-step safety guidelines. In addition, the app includes a contact list for local emergency services, making vital support easily reachable when seconds count.
                 
-                This project reflects our team’s commitment to human-centered design and collaborative problem-solving. We worked closely with town leadership, emergency responders, and community stakeholders to identify the most urgent needs and tailor the app accordingly. Our user experience emphasized clarity, simplicity, and fast access to life-saving information.
+                This project reflects our team's commitment to human-centered design and collaborative problem-solving. We worked closely with town leadership, emergency responders, and community stakeholders to identify the most urgent needs and tailor the app accordingly. Our user experience emphasized clarity, simplicity, and fast access to life-saving information.
                 
                 The Brunswick Emergency Beacon not only showcases my contributions as a UX/UI designer but also highlights my ability to apply technology for social good. From research to prototyping and design, this project demonstrates how thoughtful design can empower communities and foster resilience in the face of natural disasters.</p></div>
     
-                <section class="p3">
-                    <img src="images/greenBackground.png" alt="pic">
-                    <img src="images/proj3.png" alt="Portfolio Website" class="proj3img">
-                  </section>
+        <div class="p3">
+            <h2 class="visually-hidden">Portfolio Website Project</h2>
+            <img src="images/greenBackground.png" alt="pic">
+            <img src="images/proj3.png" alt="Portfolio Website" class="proj3img">
+        </div>
         <div id="desc3" >
             <h2>Personal Portfolio Website (HTML + CSS)</h2>
             <p>My personal portfolio website is a custom-built project that showcases my skills, experience, and creative work as a developer and designer. Built entirely with HTML and CSS, the site reflects both my technical proficiency and my attention to visual design, responsiveness, and usability.
 
                 The site features a clean, structured layout with intuitive navigation, making it easy for visitors to explore my background, personal projects, resume, and contact information. I focused on ensuring a consistent and professional aesthetic across both desktop and mobile views using semantic HTML and responsive design techniques.
                 
-                Beyond just serving as an online resume, this project demonstrates my ability to design, code, and maintain a functional, user-centered website from the ground up. Every section is purposefully crafted to communicate not just what I’ve done, but how I approach problem-solving, creativity, and presentation.
+                Beyond just serving as an online resume, this project demonstrates my ability to design, code, and maintain a functional, user-centered website from the ground up. Every section is purposefully crafted to communicate not just what I've done, but how I approach problem-solving, creativity, and presentation.
                 
                 This project stands as a reflection of my personal brand and technical identity, showing how I use code and design to tell my story in a meaningful and professional way.
                 
                 </p></div>
                
     </div>
-   <div>
-
-
-    <section class="projBtn">
-        <button onclick="location.href='reflection.html' ">Next Page</button>
-    </section>
+    <div>
+        <div class="projBtn">
+            <h2 class="visually-hidden">Navigation Controls</h2>
+            <button onclick="location.href='reflection.html'">Next Page</button>
+        </div>
     </div>
     </main>
 
@@ -147,5 +159,4 @@ Tested: Feb 15th 2025
         <a href="https://icons8.com">Icon pack by Icons8</a>
     </footer>
 </body>
-
 </html>
