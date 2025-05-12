@@ -474,7 +474,7 @@ footer p, footer a {
   }
 
   @page {
-    margin: 1;
+    margin: 1px;;
   }
 
   p, ul {
