@@ -99,9 +99,9 @@
     #toggle-menu:checked + #hamburger + .list {
         display: flex;
     }
-
+/* 
     .proj:hover .ddown {
         display: none;
-    }
-}
+    }*/
+} 
 
