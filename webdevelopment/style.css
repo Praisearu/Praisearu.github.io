@@ -147,7 +147,10 @@ h1, footer {
     width: 100%;
   }
 }
- 
+ .whole{
+  padding-right: 5%;
+  padding-left: 5%;
+ }
 
 .formContainer {
   display: flex;
@@ -260,6 +263,10 @@ form button:hover {
   align-items: center;
 
 
+}
+.homeContainer{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .p1, .p2, .p3 {
