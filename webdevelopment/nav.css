@@ -99,6 +99,10 @@
     #toggle-menu:checked + #hamburger + .list {
         display: flex;
     }
+    .proj:hover .ddown {
+  display: flex;
+  flex-direction: column;
+}
 /* 
     .proj:hover .ddown {
         display: none;
